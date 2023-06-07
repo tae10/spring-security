@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	{{#error}}
+	<div>
+		아이디 혹은 비밀번호가 일치하지않습니다
+	</div>
+	{{/error}}
+	<form action="/login" method="post">
+		<input type="text" name="username">
+		<input type="password" name="password"> 
+		<button>로그인</button>
+	</form>
+</body>
+</html>
